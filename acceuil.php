@@ -17,7 +17,7 @@ include("head.php");
 
 
 include("nav.php");
-
+include("bloc.php");
 
 
 ?>
