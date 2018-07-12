@@ -1,5 +1,7 @@
 .clear{clear: both;}
-
+body {
+  margin: 0; /* Margaux, sérieux ? */
+}
 #nav{  width: 100%;
     position: relative;
 }
