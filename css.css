@@ -49,11 +49,62 @@ h1{
   height: 1500px; /* Used in this example to enable scrolling */
 }
 #container {
-    background-color: grey;
     width: 100%;
     overflow: hidden;
 }
 .bloc {
     float: left;
-	width: 33%;
+	width: 33.33%;
+	min-height: 300px;
+}
+.bloc.bleuF {
+    background-color: #3894F0;
+}
+.bloc.bleu {
+    background-color: #38D1F0;
+}
+.bloc.turquoise {
+    background-color: #38F0EA;
+}
+h1.title-bloc {
+    text-align: center;
+    top: 20%;
+    position: absolute;
+    font-size: 48px;
+    position: relative;
+}
+ul li{
+     position:relative;float:left;
+     width:100px;height:100px;padding:10px;list-style:none;
+}
+/*permet de créer deux lignes*/
+ul li:nth-child(4n){clear:left;} 
+          
+ul li a{
+     display:block;overflow:hidden;
+     width:100px;height:100px;
+     margin-top:0px;margin-left:0px;
+     border:0px solid rgba(0,0,0,0.7);
+     transition-property:width,height,margin,z-index,border;
+     transition-duration:0.4s;
+}
+
+ul li a:hover{
+     position:absolute;
+     width:200px;height:200px;
+     margin-top:-56px;margin-left:-56px;
+     z-index:100;
+     border:6px solid rgba(0,0,0,0.7);
+}
+          
+ul li a img{
+     position:absolute;
+     width:100px;height:100px;z-index:20;
+     transition-property:width,height,z-index;
+     transition-duration:0.4s;
+}
+          
+ul li a:hover img{
+     width:200px;height:200px;
+     z-index:100;
 }
