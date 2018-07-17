@@ -69,42 +69,102 @@ h1{
 h1.title-bloc {
     text-align: center;
     top: 20%;
-    position: absolute;
     font-size: 48px;
     position: relative;
 }
-ul li{
-     position:relative;float:left;
-     width:100px;height:100px;padding:10px;list-style:none;
-}
-/*permet de créer deux lignes*/
-ul li:nth-child(4n){clear:left;} 
-          
-ul li a{
-     display:block;overflow:hidden;
-     width:100px;height:100px;
-     margin-top:0px;margin-left:0px;
-     border:0px solid rgba(0,0,0,0.7);
-     transition-property:width,height,margin,z-index,border;
-     transition-duration:0.4s;
+/************************** gallery ***********************************/
+
+* {
+  box-sizing: border-box;
 }
 
-ul li a:hover{
-     position:absolute;
-     width:200px;height:200px;
-     margin-top:-56px;margin-left:-56px;
-     z-index:100;
-     border:6px solid rgba(0,0,0,0.7);
+/* Position the image container (needed to position the left and right arrows) */
+.gallery {
+	position: relative;
+
 }
-          
-ul li a img{
-     position:absolute;
-     width:100px;height:100px;z-index:20;
-     transition-property:width,height,z-index;
-     transition-duration:0.4s;
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  text-align: center;
 }
-          
-ul li a:hover img{
-     width:200px;height:200px;
-     z-index:100;
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+img.demo.cursor.active{
+	width:100%;
+	 text-align: center;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
