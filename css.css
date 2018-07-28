@@ -2,9 +2,35 @@
 body {
   margin: 0; /* Margaux, sérieux ? */
 }
+
+/************************** Navbar **********************/
 #nav{  width: 100%;
     position: relative;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+/********************************************************/
 .img{
 	background-image: url('img/fond.jpg');
 	background-repeat: no-repeat;
@@ -21,26 +47,6 @@ h1{
   top: 38%;
   left: 0;
   right: 0;
-}
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
 }
 
 .main {
@@ -88,6 +94,8 @@ h1.title-bloc {
 .mySlides {
   display: none;
   text-align: center;
+    max-height: 153px;
+	overflow: hidden ; 
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -165,6 +173,19 @@ img.demo.cursor.active{
 .demo:hover {
   opacity: 1;
 }
-
-
-
+#gallery{
+	margin-top: 50px;
+}
+#gallery img {
+    width: 50%;
+}
+#gallery .mySlides {
+    max-height:none;
+}
+#gallery .column {
+    float: left;
+    width: 20%;
+    position: relative;
+	margin-right: 30px;
+    overflow: hidden;
+}

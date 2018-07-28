@@ -8,26 +8,29 @@ include("nav.php");
 
 
 ?>
-<div class="gallery">
-    <div class="mySlides">
-		<div class="numbertext">1 / 6</div>
-		  <img src="img/image.jpg" >
+<section id="gallery">
+	<div class="gallery ">
+		<div class="mySlides">
+			<img src="img/La_cabane_a_cochon/014_hd.jpg" >
+		</div>
+		<div class="mySlides">
+			<img src="img/Accueil/001_ld.jpg" >
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>		
 	</div>
-	<div class="mySlides">
-		<div class="numbertext">2 / 6</div>
-		  <img src="img/images.jpg" >
-	</div>
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	<div class="row">
 		<div class="column">
-		  <img class="demo cursor" src="img/image.jpg"  onclick="currentSlide(1)" alt="The Woods">
+			<img class="demo cursor" src="img/La_cabane_a_cochon/014_hd.jpg" style ="width: 300px; height: 200px;"  onclick="currentSlide(1)" alt="The Woods">
 		</div>
 		<div class="column"> 
-		  <img class="demo cursor" src="img/images.jpg"  onclick="currentSlide(2)" alt="Cinque Terre">
+			<img class="demo cursor" src="img/Accueil/001_ld.jpg" style ="width: 300px; height: 200px;"  onclick="currentSlide(2)" alt="Cinque Terre">
 		</div>
 	</div>
-</div>
+	
+	
+	<h1 class="title-bloc">Le debut des travaux </h1>
+</section>
 <script>
 	var slideIndex = 1;
 showSlides(slideIndex);

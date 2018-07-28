@@ -1,8 +1,9 @@
 <div class="clear"> </div>
 <section id="nav">
-	<div class="navbar">
-	  <a href="acceuil.php">Acceuil</a>
-	  <a href="travaux.php">Les Travaux</a>
-	  <a href="#contact">Contact</a>
-	</div>
+	<ul>
+	  <li><a class="active" href="acceuil.php">Accueil</a></li>
+	  <li><a href="travaux.php">Les travaux</a></li>
+	 <!-- <li><a href="#contact">Contact</a></li>
+	  <li><a href="#about">About</a></li>-->
+	</ul>
 </section>
