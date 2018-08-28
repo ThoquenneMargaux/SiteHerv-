@@ -4,12 +4,12 @@
 		<div class="gallery">
 			<div class="mySlides">
 				
-				<img src="img/La_cabane_a_cochon/014_hd.jpg" style ="width: 300px; height: 200px;" >
-				
+				<img src="../assets/img/La_cabane_a_cochon/014_hd.jpg" style ="width: 300px; height: 200px;" >
+			
 			</div>
 			<div class="mySlides">
 				
-				<img src="img/Accueil/001_ld.jpg" style ="width: 300px; height: 200px;">
+				<img src="../assets/img/Accueil/001_ld.jpg" style ="width: 300px; height: 200px;">
 				
 			</div>
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -20,11 +20,7 @@
 	<div class="bloc bleu">
 		<h1 class="title-bloc ">Les compagnons</h1>
 		
-	</div>
-	<div class="bloc turquoise">
-		<h1 class="title-bloc ">truc</h1>
-		
-	</div>
+</div>
 </section>	
 <script>
 	var slideIndex = 1;
@@ -50,11 +46,11 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  // dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>

@@ -16,7 +16,10 @@ ul {
 }
 
 li {
-    float: left;
+  left: 33%;
+  position: relative;
+  width: 10%;
+  float: left;
 }
 
 li a {
@@ -31,8 +34,26 @@ li a:hover {
     background-color: #111;
 }
 /********************************************************/
+
+/************************** Dropdown **********************/
+
+#dropdown {
+  flex-wrap: wrap;
+  padding: 10px 16px;
+  background-color: green;
+  display:none;
+  position: absolute;
+  z-index: 5;
+}
+#dropdown li {
+  width: 100%;
+  color:tomato;
+
+}
+
+/********************************************************/
 .img{
-	background-image: url('img/fond.jpg');
+	background-image: url('../img/fond.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
   min-height: 529px;
@@ -57,20 +78,28 @@ h1{
 #container {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 4%;
+    position: relative;
 }
 .bloc {
     float: left;
-	width: 33.33%;
-	min-height: 300px;
+	min-height: 538px;
 }
 .bloc.bleuF {
     background-color: #3894F0;
+    top: 60px;
+    left: 38px;
+    width: 40%;
+
+    position: relative;
 }
 .bloc.bleu {
     background-color: #38D1F0;
-}
-.bloc.turquoise {
-    background-color: #38F0EA;
+    top: 60px;
+    left: 91px;
+    width: 40%;
+    left:10%;
+    position: relative;
 }
 h1.title-bloc {
     text-align: center;
@@ -94,7 +123,7 @@ h1.title-bloc {
 .mySlides {
   display: none;
   text-align: center;
-    max-height: 153px;
+  
 	overflow: hidden ; 
 }
 

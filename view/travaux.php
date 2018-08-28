@@ -1,14 +1,15 @@
 <?php
 
-
-include("head.php");
-include("header.php");
-include("nav.php");
-
-
+include("/components/head.php");
+include("/components/header.php");
+include("/components/nav.php");
 
 ?>
-<section id="gallery">
+<div class="bloc bleu">
+		<h1 class="title-bloc ">Les travaux</h1>
+		
+</div>
+<!-- <section id="gallery"> 
 	<div class="gallery ">
 		<div class="mySlides">
 			<img src="img/La_cabane_a_cochon/014_hd.jpg" >
@@ -62,4 +63,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-</script>
+</script>-->

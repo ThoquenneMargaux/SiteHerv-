@@ -1,0 +1,215 @@
+body{
+    font-family: 'Cabin Sketch', cursive;
+}
+
+/************************** Navbar **********************/
+#nav{  width: 100%;
+    position: relative;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:grey;
+}
+
+li {
+ 
+  position: relative;
+  width: 10%;
+  float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:gray;
+}
+
+/************************** Dropdown **********************/
+
+#dropdown {
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    background-color: green;
+    display:none;
+    position: absolute;
+    z-index: 5;
+  }
+  #dropdown li {
+    width: 100%;
+    z-index: 10;
+    color:tomato;
+  
+  }
+
+  #dropdown1 {
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    background-color: green;
+    display:none;
+    position: absolute;
+    z-index: 5;
+  }
+  #dropdown1 li {
+    width: 100%;
+    color:tomato;
+  
+  }
+/********************** Formulaire de MDP ****************/
+#modifMDP{
+    position: relative;
+    background-color: beige;
+    left: 37%;
+    width: 20%;
+    height: 252px;
+    border-radius: 10px;
+}
+.formMDP{
+    position: relative;
+    left: 14%;
+}
+.inputMDP{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.pMDP{
+    color:blue;
+    text-align: center;
+    font-size: 23px;
+}
+.submitMDP{
+    background-color: blueviolet;
+    width: 50%;
+    text-align: center;
+    margin-left: 50px;
+    font-family: 'Cabin Sketch', cursive;
+}
+/*****************Modif text ********************/
+#modifText{
+    position: relative;
+    width: 50%;
+    background-color: beige;
+    overflow: hidden;
+    left: 27%;
+    margin-top: 0px;
+    top: 55px;
+  
+    border-radius: 10px;
+    border: none;
+}
+.pmodifText{
+    color:blue;
+    text-align: center;
+    font-size: 23px;
+}
+.formText{
+    width: 90%;
+    margin-left: 27px;
+}
+
+
+.submitText {
+    background-color: blueviolet;
+    width: 50%;
+    text-align: center;
+    left: 27%;
+    font-family: 'Cabin Sketch', cursive;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+/*******************Ajout photo ************/
+#ajoutPhoto{
+    position: relative;
+    width: 34%;
+    background-color: #EFA0F0;
+    overflow: hidden;
+    left: 5%;
+    margin-top: 0px;
+    top: 55px;
+    float: left;
+    min-height: 215px;
+    border-radius: 10px;
+    border: none;
+}
+.formPhoto{
+    position: relative;
+    left: 5%;
+
+}
+.pPhoto{
+    color: hotpink;
+    text-align: center;
+    font-size: 23px;
+}
+.photo{
+    margin-top: 20px;
+
+}
+.submitPhoto {
+    background-color: cornflowerblue;
+    width: 50%;
+    text-align: center;
+    left: 10%;
+    font-family: 'Cabin Sketch', cursive;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+/*******************Suppression photo ************/
+#supPhoto{
+    position: relative;
+    width: 34%;
+    background-color: #EFA0F0;
+    overflow: hidden;
+    left: 27%;
+    margin-top: 0px;
+    top: 55px;
+    float: left;
+    min-height: 215px;
+    border-radius: 10px;
+    border: none;
+}
+.formSupPhoto{
+    position: relative;
+    left: 5%;
+
+}
+
+/*******************Connexion ************/
+#connexion{
+    position: relative;
+    background-color: red;
+    width: 37%;
+    min-height: 319px;
+    left: 28%;
+    border-radius: 33px;
+    border: none;
+    top: 120px;
+}
+.formConnexion{
+    position: relative;
+    left: 23%;
+    top: 36px;
+}
+.submitConnexion{
+    background-color: lightblue;
+    width: 50%;
+    text-align: center;
+    font-family: 'Cabin Sketch', cursive;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
